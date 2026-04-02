@@ -424,7 +424,7 @@ export default async function BoatDetailPage({ params }: Props) {
                       lineHeight: 1.5,
                     }}
                   >
-                    All prices in Canadian dollars. 12% HST applies.
+                    All prices in Canadian dollars. Applicable taxes extra.
                     <br />
                     Weekly charter rates — 7 nights.
                   </p>

@@ -124,5 +124,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...fleetRoutes, ...itineraryRoutes];
+  const blogSlugs = [
+    "best-anchorages-desolation-sound",
+    "bareboat-vs-skippered-charter",
+    "packing-list-bc-sailing",
+    "whale-watching-johnstone-strait",
+    "princess-louisa-inlet-guide",
+    "sailing-certification-bc",
+  ];
+
+  const blogRoutes: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...fleetRoutes, ...itineraryRoutes, ...blogRoutes];
 }
