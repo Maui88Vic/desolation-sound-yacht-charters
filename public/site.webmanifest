@@ -1,0 +1,16 @@
+{
+  "name": "Desolation Sound Yacht Charters",
+  "short_name": "DSYC",
+  "description": "Bareboat & skippered yacht charters from Comox into BC's finest cruising waters. Since 1978.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D2235",
+  "theme_color": "#0D2235",
+  "icons": [
+    {
+      "src": "/images/dsyc-logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
