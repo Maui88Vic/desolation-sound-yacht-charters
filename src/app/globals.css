@@ -103,6 +103,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
   color: var(--color-deep);
 }
+
+/* Allow inline color styles and section context to override base heading color */
+.section-deep h1, .section-deep h2, .section-deep h3,
+.section-ocean h1, .section-ocean h2, .section-ocean h3 {
+  color: var(--color-white);
+}
+
 h1 { font-size: var(--text-hero); font-weight: 500; }
 h2 { font-size: var(--text-h2); font-weight: 500; }
 h3 { font-size: var(--text-h3); font-weight: 500; }

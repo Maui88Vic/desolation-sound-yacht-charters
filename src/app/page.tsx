@@ -100,7 +100,7 @@ export default function HomePage() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(135deg, rgba(13,34,53,0.88) 0%, rgba(13,34,53,0.60) 50%, rgba(13,34,53,0.20) 100%)",
+                "linear-gradient(to right, rgba(13,34,53,0.92) 0%, rgba(13,34,53,0.78) 55%, rgba(13,34,53,0.35) 100%)",
             }}
             aria-hidden="true"
           />
@@ -110,12 +110,13 @@ export default function HomePage() {
             <p className="eyebrow eyebrow-gold mb-5">Desolation Sound · Broughton Archipelago · Princess Louisa Inlet</p>
             <h1
               id="hero-heading"
-              className="mb-6 text-white"
+              className="mb-6"
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: "var(--text-display)",
                 fontWeight: 400,
                 lineHeight: 1.1,
+                color: "#ffffff",
               }}
             >
               One of the World&rsquo;s Great Cruising Destinations.

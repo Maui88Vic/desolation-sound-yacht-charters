@@ -25,8 +25,8 @@ export function PageHero({ eyebrow, title, subtitle }: PageHeroProps) {
         {eyebrow && <p className="eyebrow eyebrow-gold mb-4">{eyebrow}</p>}
         <h1
           id="page-hero-heading"
-          className="mb-4 text-white"
-          style={{ fontFamily: "var(--font-display)", fontSize: "var(--text-hero)", fontWeight: 500 }}
+          className="mb-4"
+          style={{ fontFamily: "var(--font-display)", fontSize: "var(--text-hero)", fontWeight: 500, color: "#ffffff" }}
         >
           {title}
         </h1>
