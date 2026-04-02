@@ -100,7 +100,7 @@ export default function HomePage() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to right, rgba(13,34,53,0.92) 0%, rgba(13,34,53,0.78) 55%, rgba(13,34,53,0.35) 100%)",
+                "linear-gradient(to right, rgba(13,34,53,0.80) 0%, rgba(13,34,53,0.65) 50%, rgba(13,34,53,0.20) 100%)",
             }}
             aria-hidden="true"
           />
@@ -211,7 +211,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-6">
-                  <h3 className="mb-2 text-white" style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", fontWeight: 500 }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", fontWeight: 500, color: "#ffffff", marginBottom: "0.5rem" }}>
                     {dest.name}
                   </h3>
                   <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.78)" }}>

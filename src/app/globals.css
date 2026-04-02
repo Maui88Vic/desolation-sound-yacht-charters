@@ -101,7 +101,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   line-height: 1.15;
+  /* Default to deep navy on light backgrounds.
+     Inline styles always beat this rule — no cascading fights. */
   color: var(--color-deep);
+}
+
+/* Headings inside explicitly dark sections inherit white automatically */
+.section-deep h1, .section-deep h2, .section-deep h3,
+.section-ocean h1, .section-ocean h2, .section-ocean h3,
+[style*="background-color: var(--color-deep)"] h1,
+[style*="background-color: var(--color-deep)"] h2,
+[style*="background-color: var(--color-deep)"] h3,
+[style*="backgroundColor: var(--color-deep)"] h1,
+[style*="backgroundColor: var(--color-deep)"] h2,
+[style*="backgroundColor: var(--color-deep)"] h3 {
+  color: var(--color-white);
 }
 
 /* Allow inline color styles and section context to override base heading color */
